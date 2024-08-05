@@ -5,17 +5,6 @@
 </h1>
 
 
-
-The framework of DR-PAM is as follow:
-
-![image-20240806011806923](C:\Users\何嘉诚\AppData\Roaming\Typora\typora-user-images\image-20240806011806923.png)
-
-![image-20240806011850026](C:\Users\何嘉诚\AppData\Roaming\Typora\typora-user-images\image-20240806011850026.png)
-
-
-
-
-
 An introduction video can be seen on  [Bilibili](https://www.bilibili.com/video/BV19DYAe3EVi/?spm_id_from=333.999.list.card_archive.click&vd_source=2421d86d062a73ffa2c05fb6487e7fcf)
 
 
