@@ -2770,27 +2770,6 @@ void computeXYZadmm(probData& prob_data, int VERBOSE) {
     prob_data.miu_x =
         (prob_data.miu_z + prob_data.rho_ineq * res_z_ineq).max(0.0);
 
-    // prob_data.lamda_z = prob_data.lamda_z
-    //		-prob_data.rho_vel * (prob_data.Pdot.transpose().matrix() *
-    // res_z_vel.matrix()).array() 		-prob_data.rho_acc *
-    //(prob_data.Pddot.transpose().matrix() * res_z_acc.matrix()).array()
-    //		-prob_data.rho_ineq * (prob_data.A_ineq.transpose().matrix() *
-    // res_z_ineq.matrix()).array();
-
-    // prob_data.lamda_x = prob_data.lamda_x
-    //		-prob_data.rho_vel * (prob_data.Pdot.transpose().matrix() *
-    // res_x_vel.matrix()).array() 		-prob_data.rho_acc *
-    //(prob_data.Pddot.transpose().matrix() * res_x_acc.matrix()).array()
-    //		-prob_data.rho_ineq * (prob_data.A_ineq.transpose().matrix() *
-    // res_x_ineq.matrix()).array();
-
-    // prob_data.lamda_y = prob_data.lamda_y
-    //		-prob_data.rho_vel * (prob_data.Pdot.transpose().matrix() *
-    // res_y_vel.matrix()).array() 		-prob_data.rho_acc *
-    //(prob_data.Pddot.transpose().matrix() * res_y_acc.matrix()).array()
-    //		-prob_data.rho_ineq * (prob_data.A_ineq.transpose().matrix() *
-    // res_y_ineq.matrix()).array();
-
     if (prob_data.jerk_snap_constraints) {
       res_x_jerk = prob_data.xdddot - prob_data.d_jerk *
                                           cos(prob_data.alpha_jerk) *
@@ -3973,10 +3952,6 @@ bool iscollisionwithobs(probData& prob_data, int VERBOSE, float x, float y) {
 }
 void rightrule(probData& prob_data, int VERBOSE)  // new add 右手法则得到subgoal
 {                                                 // if(prob_data.id_badge==1)
-  //   std::cout<<" rightrule mode"<<std::endl;
-
-  // double temp =
-  // sqrt(pow(prob_data.y_goal-prob_data.agents_y(0),2)+pow(prob_data.x_goal-prob_data.agents_x(0),2));
   prob_data.temp_x_goal =
       prob_data.agents_x(prob_data.id_badge, 0) +
       (prob_data.y_goal - prob_data.agents_y(prob_data.id_badge, 0));
