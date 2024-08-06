@@ -41,4 +41,5 @@ rosrun dr_pam run_dr_pam
 (3) Then you will get a .txt file in data profile and can use the animate_trajectory.py to run visualization in matlab.
 ### Contact
 Currently, this is only the initial version. We will continuously improve the code quality and readability, as well as fix some bugs. Please stay tuned for our follow-up work.
+
 Jiacheng he (22232021@zju.edu.cn)
