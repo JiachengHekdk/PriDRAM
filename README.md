@@ -27,7 +27,7 @@ Install eigen_quad_prog and run sudo ln -s /usr/include/eigen3/Eigen /usr/includ
 
 ```
 cd catkin_ws/src
-https://github.com/JiachengHekdk/DR-PAM.git
+https://github.com/JiachengHekdk/PriDRAM.git
 cd .. 
 catkin_make  
 source devel/setup.bash  
