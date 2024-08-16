@@ -1,5 +1,5 @@
 <h1 align="center">
-  <span style="font-size: 40px;">DR-PAM</span> <!-- 将字体大小从30px调整到40px -->
+  <span style="font-size: 40px;">PriDRAM</span> <!-- 将字体大小从30px调整到40px -->
   <br> <!-- 在描述文字之前的换行保持不变 -->
   Priority-Based Deadlock Recovery for Distributed Swarm Obstacle Avoidance in Cluttered Environments
 </h1>
